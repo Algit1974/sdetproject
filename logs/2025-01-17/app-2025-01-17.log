@@ -1,0 +1,21 @@
+2025-01-17 19:56:38,677 INFO listeners.Listeners1 [main] Adding Products on Homepage test starting.
+2025-01-17 19:56:54,619 INFO listeners.Listeners1 [main] testclasses.AddProductOnHomePage class is starting.
+2025-01-17 19:56:54,642 INFO listeners.Listeners1 [main] addProductOnHomepage test method is starting.
+2025-01-17 19:56:54,762 INFO pageclasses.HomePage [main] Cart icon shows no items in cart.
+2025-01-17 19:56:54,763 INFO testclasses.AddProductOnHomePage [main] Initial items in Cart: 0
+2025-01-17 19:56:55,341 INFO pageclasses.HomePage [main] moused over Breathe-Easy Tank
+2025-01-17 19:56:55,560 INFO pageclasses.HomePage [main] Clicked M size button.
+2025-01-17 19:56:55,720 INFO pageclasses.HomePage [main] Clicked Purple color button for Breathe-Easy Tank
+2025-01-17 19:56:57,678 INFO pageclasses.HomePage [main] Clicked "Add to Cart" button.
+2025-01-17 19:56:59,419 INFO testclasses.AddProductOnHomePage [main] Number of items added in current session: 1
+2025-01-17 19:56:59,421 INFO testclasses.AddProductOnHomePage [main] The following items were added in current session
+2025-01-17 19:56:59,429 INFO testclasses.AddProductOnHomePage [main] Breathe-Easy Tank M Purple Quantity:  1
+2025-01-17 19:56:59,431 INFO testclasses.AddProductOnHomePage [main] The following items should be expected in the cart.
+2025-01-17 19:56:59,432 INFO testclasses.AddProductOnHomePage [main] Breathe-Easy Tank M Purple Quantity:  1
+2025-01-17 19:56:59,588 INFO pageclasses.HomePage [main] Clicked cart icon.
+2025-01-17 19:56:59,755 INFO testclasses.AddProductOnHomePage [main] Total number of Items in actual cart: 1
+2025-01-17 19:56:59,755 INFO testclasses.AddProductOnHomePage [main] The following items are in actual cart.
+2025-01-17 19:56:59,755 INFO testclasses.AddProductOnHomePage [main] Breathe-Easy Tank M Purple Quantity:  1
+2025-01-17 19:56:59,759 INFO listeners.Listeners1 [main] addProductOnHomepage test method passed.
+2025-01-17 19:56:59,759 INFO listeners.Listeners1 [main] testclasses.AddProductOnHomePage class is finished.
+2025-01-17 19:57:00,061 INFO listeners.Listeners1 [main] Adding Products on Homepage test finished.
