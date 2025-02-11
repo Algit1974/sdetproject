@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="22.838" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="16.502" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\User1\AppData\Local\Temp\surefire9138368264204066660\surefirebooter-20250117195636819_3.jar C:\Users\User1\AppData\Local\Temp\surefire9138368264204066660 2025-01-17T19-56-36_662-jvmRun1 surefire-20250117195636819_1tmp surefire_0-20250117195636819_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User1\AppData\Local\Temp\surefire16704595728131893021\surefirebooter-20250211175220585_3.jar C:\Users\User1\AppData\Local\Temp\surefire16704595728131893021 2025-02-11T17-52-20_421-jvmRun1 surefire-20250211175220585_1tmp surefire_0-20250211175220585_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\User1\eclipse-workspace\sdetproject\target\test-classes;C:\Users\User1\eclipse-workspace\sdetproject\target\classes;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\User1\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\User1\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\User1\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\User1\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\User1\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User1\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User1\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User1\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\User1\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User1\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\User1\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\User1\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\User1\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\User1\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\User1\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User1\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User1\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User1\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User1\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\User1\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\User1\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\User1\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\User1\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\User1\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\User1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User1\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User1\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\User1\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\User1\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User1\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User1\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\User1\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\User1\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\User1\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\User1\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User1\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User1\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User1\.m2\repository\org\apache\logging\log4j\log4j-core\3.0.0-beta2\log4j-core-3.0.0-beta2.jar;C:\Users\User1\.m2\repository\org\apache\logging\log4j\log4j-plugins\3.0.0-beta2\log4j-plugins-3.0.0-beta2.jar;C:\Users\User1\.m2\repository\org\apache\logging\log4j\log4j-api\3.0.0-beta2\log4j-api-3.0.0-beta2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User1\AppData\Local\Temp\surefire9138368264204066660\surefirebooter-20250117195636819_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User1\AppData\Local\Temp\surefire16704595728131893021\surefirebooter-20250211175220585_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -58,32 +58,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="addProductOnHomepage" classname="testclasses.AddProductOnHomePage" time="5.118">
-    <system-out><![CDATA[19:56:38.677 [main] INFO  listeners.Listeners1 - Adding Products on Homepage test starting.
-19:56:54.619 [main] INFO  listeners.Listeners1 - testclasses.AddProductOnHomePage class is starting.
-19:56:54.642 [main] INFO  listeners.Listeners1 - addProductOnHomepage test method is starting.
-19:56:54.762 [main] INFO  pageclasses.HomePage - Cart icon shows no items in cart.
-19:56:54.763 [main] INFO  testclasses.AddProductOnHomePage - Initial items in Cart: 0
-19:56:55.341 [main] INFO  pageclasses.HomePage - moused over Breathe-Easy Tank
-19:56:55.560 [main] INFO  pageclasses.HomePage - Clicked M size button.
-19:56:55.720 [main] INFO  pageclasses.HomePage - Clicked Purple color button for Breathe-Easy Tank
-19:56:57.678 [main] INFO  pageclasses.HomePage - Clicked "Add to Cart" button.
-19:56:59.419 [main] INFO  testclasses.AddProductOnHomePage - Number of items added in current session: 1
-19:56:59.421 [main] INFO  testclasses.AddProductOnHomePage - The following items were added in current session
-19:56:59.429 [main] INFO  testclasses.AddProductOnHomePage - Breathe-Easy Tank M Purple Quantity:  1
-19:56:59.431 [main] INFO  testclasses.AddProductOnHomePage - The following items should be expected in the cart.
-19:56:59.432 [main] INFO  testclasses.AddProductOnHomePage - Breathe-Easy Tank M Purple Quantity:  1
-19:56:59.588 [main] INFO  pageclasses.HomePage - Clicked cart icon.
-19:56:59.755 [main] INFO  testclasses.AddProductOnHomePage - Total number of Items in actual cart: 1
-19:56:59.755 [main] INFO  testclasses.AddProductOnHomePage - The following items are in actual cart.
-19:56:59.755 [main] INFO  testclasses.AddProductOnHomePage - Breathe-Easy Tank M Purple Quantity:  1
-19:56:59.759 [main] INFO  listeners.Listeners1 - addProductOnHomepage test method passed.
+  <testcase name="addProductOnHomepage" classname="testclasses.AddProductOnHomePage" time="10.222">
+    <system-out><![CDATA[17:52:22.250 [main] INFO  listeners.Listeners1 - Adding Products on Homepage test starting.
+17:52:26.743 [main] INFO  listeners.Listeners1 - testclasses.AddProductOnHomePage class is starting.
+17:52:26.763 [main] INFO  listeners.Listeners1 - addProductOnHomepage test method is starting.
+17:52:26.857 [main] INFO  pageclasses.HomePage - Cart icon shows no items in cart.
+17:52:26.857 [main] INFO  testclasses.AddProductOnHomePage - Initial items in Cart: 0
+17:52:27.277 [main] INFO  pageclasses.HomePage - moused over Breathe-Easy Tank
+17:52:27.591 [main] INFO  pageclasses.HomePage - Clicked M size button.
+17:52:32.787 [main] INFO  pageclasses.HomePage - Clicked Purple color button for Breathe-Easy Tank
+17:52:35.060 [main] INFO  pageclasses.HomePage - Clicked "Add to Cart" button.
+17:52:36.494 [main] INFO  testclasses.AddProductOnHomePage - Number of items added in current session: 1
+17:52:36.495 [main] INFO  testclasses.AddProductOnHomePage - The following items were added in current session
+17:52:36.498 [main] INFO  testclasses.AddProductOnHomePage - Breathe-Easy Tank M Purple Quantity:  1
+17:52:36.499 [main] INFO  testclasses.AddProductOnHomePage - The following items should be expected in the cart.
+17:52:36.499 [main] INFO  testclasses.AddProductOnHomePage - Breathe-Easy Tank M Purple Quantity:  1
+17:52:36.746 [main] INFO  pageclasses.HomePage - Clicked cart icon.
+17:52:36.975 [main] INFO  testclasses.AddProductOnHomePage - Total number of Items in actual cart: 1
+17:52:36.976 [main] INFO  testclasses.AddProductOnHomePage - The following items are in actual cart.
+17:52:36.976 [main] INFO  testclasses.AddProductOnHomePage - Breathe-Easy Tank M Purple Quantity:  1
+17:52:36.982 [main] INFO  listeners.Listeners1 - addProductOnHomepage test method passed.
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jan 17, 2025 7:56:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 131
+Feb 11, 2025 5:52:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 132, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 132
 ]]></system-err>
   </testcase>
 </testsuite>
