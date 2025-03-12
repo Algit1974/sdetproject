@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-06T17:14:50 CST" name="Master Suite" finished-at="2025-02-06T17:15:11 CST" duration-ms="21250">
+  <suite started-at="2025-03-11T21:32:13 CDT" name="Master Suite" finished-at="2025-03-11T21:32:24 CDT" duration-ms="10987">
     <groups>
     </groups>
-    <test started-at="2025-02-06T17:14:50 CST" name="Adding Products on Homepage" finished-at="2025-02-06T17:15:11 CST" duration-ms="21250">
-      <class name="testclasses.AddProductOnHomePage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testclasses.AddProductOnHomePage@6b53bcc2]" started-at="2025-02-06T17:14:50 CST" name="setup" finished-at="2025-02-06T17:14:59 CST" duration-ms="9571" status="PASS">
+    <test started-at="2025-03-11T21:32:13 CDT" name="Adding Products to cart Test" finished-at="2025-03-11T21:32:24 CDT" duration-ms="10987">
+      <class name="testclasses.AddProductOnMensJacketsPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testclasses.AddProductOnMensJacketsPage@53f0a4cb]" started-at="2025-03-11T21:32:13 CDT" name="setup" finished-at="2025-03-11T21:32:18 CDT" duration-ms="4716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addProductOnHomepage()[pri:0, instance:testclasses.AddProductOnHomePage@6b53bcc2]" started-at="2025-02-06T17:14:59 CST" name="addProductOnHomepage" finished-at="2025-02-06T17:15:10 CST" duration-ms="11158" status="PASS">
+        <test-method signature="addProductOnMensJacketsPage()[pri:0, instance:testclasses.AddProductOnMensJacketsPage@53f0a4cb]" started-at="2025-03-11T21:32:18 CDT" name="addProductOnMensJacketsPage" finished-at="2025-03-11T21:32:24 CDT" duration-ms="5781" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductOnHomepage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.AddProductOnHomePage@6b53bcc2]" started-at="2025-02-06T17:15:11 CST" name="tearDown" finished-at="2025-02-06T17:15:11 CST" duration-ms="440" status="PASS">
+        </test-method> <!-- addProductOnMensJacketsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.AddProductOnMensJacketsPage@53f0a4cb]" started-at="2025-03-11T21:32:24 CDT" name="tearDown" finished-at="2025-03-11T21:32:24 CDT" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testclasses.AddProductOnHomePage -->
-    </test> <!-- Adding Products on Homepage -->
+      </class> <!-- testclasses.AddProductOnMensJacketsPage -->
+    </test> <!-- Adding Products to cart Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

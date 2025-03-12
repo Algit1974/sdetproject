@@ -2,6 +2,7 @@ package pageclasses;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,10 +28,11 @@ public class BasePage {
 	  return element;
   }
   
-  protected void mouseOverElement(WebElement element) {
+  protected WebElement mouseOverElement(WebElement element) {
 	  scrollToElement(element);
 	  Actions actions = new Actions(driver);
       actions.moveToElement(element).perform();
+      return element;
   }
   
   protected void waitForElementToLoad(WebElement element, int time) {
@@ -41,4 +43,5 @@ public class BasePage {
   protected void waitForElementToBeClickable(WebElement element, int time) {
 	  new WebDriverWait(driver, Duration.ofSeconds(time)).until(ExpectedConditions.elementToBeClickable(element));
   }
+
 }

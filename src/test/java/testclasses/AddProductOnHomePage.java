@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageclasses.HomePage;
+import pageclasses.MensPage;
 import pageclasses.ProductItem;
 
 public class AddProductOnHomePage extends BaseTest {
@@ -14,25 +15,27 @@ public class AddProductOnHomePage extends BaseTest {
 	private static final Logger log = LogManager.getLogger(AddProductOnHomePage.class.getName());
 	
 	@Test ()
-	public void addProductOnHomepage() {
+	public void addProductOnHomepage() throws InterruptedException {
 		HomePage homepage = new HomePage(driver); 
 		
 		Map<ProductItem, Integer> initialItemsInCart = homepage.getItemsInCart();
 		log.info("Initial items in Cart: " + getTotalNumberOfItemsInMap(initialItemsInCart));
 		
+	
+	      //homepage.mouseOverMainMenuOption("Men").mouseOverSubMenuOption("Tops").mouseOverSubSubMenuOption("Jackets");
 	      //homepage.mouseOverItem().selectSize().selectColor().clickAddToCart();;   
 	     // homepage.mouseOverItem("Radiant Tee").selectSize("S").selectColor("Blue").clickAddToCart(); 
-		  homepage.mouseOverItem("Breathe-Easy Tank").selectSize("M").selectColor("Purple").clickAddToCart();
+		 // homepage.mouseOverItem("Breathe-Easy Tank").selectSize("M").selectColor("Purple").clickAddToCart();
 		  //homepage.mouseOverItem("Breathe-Easy Tank").selectSize("M").selectColor("Purple").clickAddToCart();
 		//  homepage.mouseOverItem("Breathe-Easy Tank").selectSize("S").selectColor("Yellow").clickAddToCart();
 		//  homepage.mouseOverItem("Push It Messenger Bag").clickAddToCart();
 		//  homepage.mouseOverItem("Push It Messenger Bag").selectSize("M").selectColor("Blue").clickAddToCart();
 		//homepage.mouseOverItem().selectSize().selectColor().clickAddToCart();
 	   // homepage.mouseOverItem("Radiant Tee").clickAddToCart();
-		
+	
 		//homepage.mouseOverItem("Push It Messenger Bag").selectSize("M").clickAddToCart();
 		//homepage.mouseOverItem("Push It Messenger Bag").selectColor("Blue").clickAddToCart();
-		driver.navigate().refresh();
+		//driver.navigate().refresh();
 	
 		Map<ProductItem, Integer> itemsAddedInCurrentSession = homepage.getItemsAddedInCurrentSession();
 		

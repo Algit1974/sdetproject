@@ -4,11 +4,12 @@
 	<listeners>
 		<listener class-name="listeners.Listeners1" />
 	</listeners>
-	<test thread-count="5" name="Adding Products on Homepage">
-		<parameter name="OS" value="windows"/>		
-		<parameter name="browser" value="chrome"/>
+	<test thread-count="5" name="Adding Products to cart Test">
+		<parameter name="OS" value="windows" />
+		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="testclasses.AddProductOnHomePage"/>
-		</classes>
+		<!--	<class name="testclasses.AddProductOnHomePage" />  -->
+			<class name="testclasses.AddProductOnMensJacketsPage" /> 
+		    </classes>
 	</test>
 </suite> 

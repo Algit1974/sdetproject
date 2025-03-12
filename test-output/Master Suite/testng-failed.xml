@@ -4,17 +4,17 @@
   <listeners>
     <listener class-name="listeners.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Adding Products on Homepage(failed)">
+  <test thread-count="5" name="Adding Products to cart Test(failed)">
     <parameter name="OS" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testclasses.AddProductOnHomePage">
+      <class name="testclasses.AddProductOnMensJacketsPage">
         <methods>
+          <include name="addProductOnMensJacketsPage"/>
           <include name="setup"/>
-          <include name="addProductOnHomepage"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testclasses.AddProductOnHomePage -->
+      </class> <!-- testclasses.AddProductOnMensJacketsPage -->
     </classes>
-  </test> <!-- Adding Products on Homepage(failed) -->
+  </test> <!-- Adding Products to cart Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

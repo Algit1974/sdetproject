@@ -49,12 +49,13 @@ public class Listeners1 implements ITestListener, IClassListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// ITestListener.super.onTestSkipped(result);
+		log.warn(result.getName() + " test method skipped.");
 	}
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		// ITestListener.super.onTestFailedWithTimeout(result);
+		
+		log.error("Test method " + result.getName() + " failed with time out of "  + result.getMethod().getTimeOut());
 	}
 
 	@Override
@@ -63,7 +64,7 @@ public class Listeners1 implements ITestListener, IClassListener {
 		log.info(context.getName() + " test starting.");
 		
 	}
-	
+
 
 	@Override
 	public void onFinish(ITestContext context) {

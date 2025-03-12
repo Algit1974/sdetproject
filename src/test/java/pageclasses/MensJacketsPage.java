@@ -15,11 +15,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-public class HomePage extends BasePage {
+public class MensJacketsPage extends BasePage {
 
 	private WebElement activeMainMenuOption;
 	private WebElement activeSubOption;
-	private WebElement activeSubSubOption;
 	protected WebElement currentItem; 
 	protected String selectedItemName;
 	protected String noSizeOption = "No size option";
@@ -33,7 +32,7 @@ public class HomePage extends BasePage {
 		
 	private static final Logger log = LogManager.getLogger(HomePage.class.getName());
 	
-	public HomePage(WebDriver driver) {
+	public MensJacketsPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
@@ -42,10 +41,10 @@ public class HomePage extends BasePage {
 //@CacheLookup      
 protected WebElement cartIcon;
 
-@FindBy(xpath="//ul[@id='ui-id-2']")
+@FindBy(id ="//ul[@id='ui-id-2']")  //xpath not working for some reason
 protected WebElement navBar;
 
-@FindBy(xpath = "//li[@class='product-item']")
+@FindBy(xpath = "//li[@class='item product product-item']")
 protected List<WebElement> itemsList;
 
 protected WebElement getElement(String itemName) {	
@@ -62,7 +61,7 @@ public int getNumberOfItemsOnPage(){
 	return itemsList.size();
 }
 
-public HomePage mouseOverMainMenuOption(String mainOption) {
+public MensJacketsPage mouseOverMainMenuOption(String mainOption) {
 	//mouseOverElement(navBar.findElement(By.xpath("//span[contains(text(), '"+mainOption+"')]")));
 	//mouseOverElement(navBar.findElement(By.xpath("//a[normalize-space()='"+mainOption+"']")));     //can also use this
 	WebElement option = navBar.findElement(By.xpath("//a[normalize-space()='"+mainOption+"']"));
@@ -84,7 +83,7 @@ public <E extends BasePage> E mouseOverMainMenuOptionAndClick(String mainOption)
     }
 }
 
-public HomePage  mouseOverSubMenuOption(String subOption) {	
+public MensJacketsPage  mouseOverSubMenuOption(String subOption) {	
 	WebElement sOption = activeMainMenuOption.findElement(By.xpath(".//ancestor::li//span[normalize-space()='"+subOption+"']"));  //notice the dot
 	//not using the dot will give not interactable exception
 	mouseOverElement(sOption);
@@ -95,7 +94,6 @@ public HomePage  mouseOverSubMenuOption(String subOption) {
 public <E extends BasePage> E mouseOverSubMenuOptionAndClick(String subOption) {
 	mouseOverSubMenuOption(subOption);
 	activeSubOption.click();
-	
 	switch(subOption) {
     case("Tops"): 
     	activeSubOption = null;
@@ -109,25 +107,9 @@ public <E extends BasePage> E mouseOverSubMenuOptionAndClick(String subOption) {
 public void mouseOverSubSubMenuOption(String subsubOption) {
    WebElement ssoption = activeSubOption.findElement(By.xpath(".//ancestor::li//span[normalize-space()='"+subsubOption+"']"));
 	mouseOverElement(ssoption);	
-	activeSubSubOption = ssoption;
 }
 
-public <E extends BasePage> E mouseOverSubSubMenuOptionAndClick(String subsubOption) {
-
-		mouseOverSubSubMenuOption(subsubOption);
-		activeSubSubOption.click();
-		
-		switch(subsubOption) {
-	    case("Jackets"): 
-	    	activeSubSubOption = null;
-	    	return (E) new MensJacketsPage(driver); 
-
-	    default: return null;
-	    }
-	}
-
-
-public HomePage mouseOverItem(String itemName) {
+public MensJacketsPage mouseOverItem(String itemName) {
 	//driver.switchTo().alert().dismiss();
 	        WebElement element = getElement(itemName);
 	        waitForElementToLoad(element, 5);
@@ -143,16 +125,16 @@ public HomePage mouseOverItem(String itemName) {
 	return this;
 }
   
-public HomePage mouseOverItem() {
+public MensJacketsPage mouseOverItem() {
 	 int randItemNo =  (int) (Math.random() * itemsList.size()) + 1;
-	 currentItem = driver.findElement(By.xpath("//li[@class='product-item']["+randItemNo+"]"));
+	 currentItem = driver.findElement(By.xpath("//li[@class='item product product-item']["+randItemNo+"]"));
 	 mouseOverElement(currentItem);
-	 selectedItemName = currentItem.findElement(By.xpath(".//div[@class='product-item-details']//a")).getText();
+	 selectedItemName = currentItem.findElement(By.xpath(".//div[@class='product details product-item-details']//a")).getText();
 	 log.info("Moused over " + selectedItemName);
 	 return this;
 }
 
-public HomePage selectSize(String size) {
+public MensJacketsPage selectSize(String size) {
 	String clickedSize = null;
 	if(getSizeOptions(currentItem).size() == 0) {
 		 clickedSize = noSizeOption;
@@ -177,7 +159,7 @@ public HomePage selectSize(String size) {
   }
 
 
-public HomePage selectSize() {
+public MensJacketsPage selectSize() {
 	  String clickedSize = null;
 	  List<WebElement> sizeButtons = getSizeOptions(currentItem);
 	  if(sizeButtons.size() == 0) {
@@ -200,7 +182,7 @@ protected List<WebElement> getSizeOptions(WebElement item) {
 	   return item.findElements(By.xpath(".//div[@class='swatch-option text']"));  //available sizes
 }
 
-public HomePage selectColor(String color) {
+public MensJacketsPage selectColor(String color) {
 	String clickedColor = null;
 	if(getColorOptions(currentItem).size() == 0) {
 		clickedColor = noColorOption;
@@ -223,7 +205,7 @@ public HomePage selectColor(String color) {
 	 return this;
  }
 
-public HomePage selectColor() {
+public MensJacketsPage selectColor() {
 	
 	String clickedColor = null;
 	List<WebElement> colorButtons = getColorOptions(currentItem);
@@ -420,5 +402,7 @@ public Map<ProductItem, Integer> getItemsInCart() {
 public Map<ProductItem, Integer> getItemsAddedInCurrentSession() {
 	   return itemsAddedInCurrentSession;
  }
-
 }
+
+
+
